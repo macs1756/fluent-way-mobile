@@ -27,6 +27,7 @@ const CreateWords = () => {
 
       // Додаємо новий об'єкт
       const newEntry = {
+        id: Date.now().toString(),
         word: newWord,
         definition: newDefinition,
       };

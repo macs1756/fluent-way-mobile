@@ -8,8 +8,14 @@ function HomeScreen({ navigation }) {
 
       <Button
         style={styles.text}
-        title="Learn"
-        onPress={() => navigation.navigate('LearnWords')}
+        title="Quiz"
+        onPress={() => navigation.navigate('Quiz')}
+      />
+
+      <Button
+        style={styles.text}
+        title="Realtions between words"
+        onPress={() => navigation.navigate('RealtionWords')}
       />
 
       <Button

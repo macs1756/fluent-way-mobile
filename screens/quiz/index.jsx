@@ -2,20 +2,34 @@ import React, { useEffect, useState } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 import * as FileSystem from 'expo-file-system';
 import { Vibration } from 'react-native';
-
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
+import { Audio } from 'expo-av';
+import { shuffleArray } from '../../fn';
 
 
 
 const LearnWords = () => {
   const [fileContent, setFileContent] = useState(null);
   const [quizContent, setQuizContent] = useState(null);
+  const [sound, setSound] = useState();
+
+  async function playSound(path) {
+    const { sound } = await Audio.Sound.createAsync(
+      require('../../assets/quiz-sucs.mp3')
+    );
+    await sound.setVolumeAsync(0.2);
+    setSound(sound);
+    await sound.playAsync();
+  }
+
+
+  useEffect(() => {
+    return sound
+      ? () => {
+        sound.unloadAsync();
+      }
+      : undefined;
+  }, [sound]);
+
 
   const readFile = async () => {
     const fileUri = `${FileSystem.documentDirectory}index.json`;
@@ -37,9 +51,8 @@ const LearnWords = () => {
   }, []);
 
 
-
-  function getUniqueRandomNumbers(sourceArray, selectedNumber, count) {
-    const filteredArray = sourceArray.filter(num => num !== selectedNumber);
+  function getUniqueRandomNumbers(sourceArray, word, count) {
+    const filteredArray = sourceArray.filter(num => num !== word);
 
     const shuffledArray = filteredArray.sort(() => 0.5 - Math.random());
     return shuffledArray.slice(0, count);
@@ -48,6 +61,7 @@ const LearnWords = () => {
   const clickOnAnswers = (isCorrect) => {
 
     if (isCorrect) {
+      playSound()
       setTimeout(() => {
         setQuizContent(renderQuiz())
       }, 400)
@@ -62,25 +76,24 @@ const LearnWords = () => {
       const randomIndex = Math.floor(Math.random() * fileContent.length);
       const randomWord = fileContent[randomIndex];
 
-      const uniqueRandomNumbers = getUniqueRandomNumbers(fileContent, randomIndex, 5);
-
+      const uniqueRandomNumbers = getUniqueRandomNumbers(fileContent, randomWord, 5);
       let answers = uniqueRandomNumbers.map(e => ({ ...e, isCorrect: false }))
       answers = [...answers, { ...randomWord, isCorrect: true }]
-
-
       answers = shuffleArray(answers)
 
       return (
         <View>
-          <Text style={styles.mainWord}>
-            {randomWord.word}
-          </Text>
+          <View>
+            <Text style={styles.mainWord}>
+              {randomWord.word}
+            </Text>
+            <Text>{fileContent.length ?? 0} words</Text>
+          </View>
 
           {
-            answers.map((answer, i) => (
-              <View style={{margin: 6}}>
+            answers.map((answer) => (
+              <View key={answer.id} style={{ margin: 6 }}>
                 <Button
-                  key={Math.floor(Math.random() * 9999)}
                   style={{ width: '100%' }}
                   title={answer.definition ?? ''}
                   onPress={() => { clickOnAnswers(answer.isCorrect) }}
@@ -96,11 +109,15 @@ const LearnWords = () => {
     }
   };
 
+  useEffect(() => {
+    setQuizContent(renderQuiz())
+  }, [fileContent])
+
   return (
     <View
       style={{ height: '100%' }}
     >
-      {renderQuiz()}
+      {quizContent}
     </View>
   );
 };
