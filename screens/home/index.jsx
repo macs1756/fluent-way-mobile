@@ -1,4 +1,5 @@
-import { View, Text, StyleSheet, Button } from 'react-native';
+import { View, StyleSheet, Button } from 'react-native';
+import { styles } from '../../styles';
 
 
 function HomeScreen({ navigation }) {
@@ -17,26 +18,17 @@ function HomeScreen({ navigation }) {
         onPress={() => navigation.navigate('CreateWord')}
       />
 
-
+      <Button
+        style={styles.text}
+        title="Settings"
+        onPress={() => navigation.navigate('Settings')}
+      />
 
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#fff',
-    gap: 60
-  },
-  text: {
-    fontSize: 22,
-    lineHeight: 24,
-    margin: 30
-  }
-});
+
 
 
 
