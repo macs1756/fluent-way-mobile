@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import React, { useEffect, useMemo, useState } from 'react';
+import { StyleSheet, Text, TouchableOpacity, Vibration, View } from 'react-native';
 import * as FileSystem from 'expo-file-system';
 import { shuffleArray } from '../../fn';
 
 
 
-const RealtionWords = () => {
+const RealtionWords = ({ navigation }) => {
   const [fileContent, setFileContent] = useState(null);
-  const [random6elements, setRandon6Elements] = useState([])
-
+  const [selectedWorld, setSelectedWorld] = useState(null)
+  const [selectedDefinitions, setSelectedDefinitions] = useState(null)
+  const [finishedFlows, setFinishedFlows] = useState([])
 
   const getRandomElements = (array, count) => {
     if (count > array.length) {
@@ -38,25 +39,67 @@ const RealtionWords = () => {
     readFile();
   }, []);
 
-  console.log(fileContent);
+
+
+  const randomElementsWords = useMemo(() => {
+    if (fileContent) {
+
+      const res = getRandomElements(fileContent, 6);
+
+      if (res) {
+        return {
+          words: res.map(item => item),
+          definitions: shuffleArray(res.map(item => item))
+        }
+      }
+
+      return {
+        words: null,
+        definitions: null
+      }
+    }
+    return [];
+  }, [fileContent]);
+
 
   useEffect(() => {
-    if (fileContent) {
-      const randomElements = getRandomElements(fileContent, 6);
-      setRandon6Elements(randomElements)
+
+    if (finishedFlows.length === 6) {
+      readFile()
+      setFinishedFlows([])
     }
 
-  }, [fileContent])
+  }, [finishedFlows])
+
+  useEffect(() => {
+    if (selectedWorld && selectedDefinitions) {
+      if (selectedWorld.id === selectedDefinitions.id) {
+        setSelectedWorld(null)
+        setSelectedDefinitions(null)
+        setFinishedFlows(prev => [...prev, selectedWorld.id])
+      } else {
+        setSelectedWorld(null)
+        setSelectedDefinitions(null)
+        Vibration.vibrate(400);
+      }
+    }
+  }, [selectedWorld, selectedDefinitions])
 
   return (
     <View style={styles.container}>
       <View style={styles.half}>
 
-        {random6elements.map(word => (
+
+        {randomElementsWords?.words && randomElementsWords.words.map(word => (
           <TouchableOpacity
             key={word.id}
-            style={[styles.button, { backgroundColor: 'rgb(33, 150, 243)' }]}
-          // onPress={changeColor} 
+            style={[styles.button,
+            {
+              backgroundColor: selectedWorld?.word === word.word ? 'green' : 'rgb(33, 150, 243)',
+              display: finishedFlows.includes(word.id) ? 'none' : 'flex'
+            }
+            ]}
+            onPress={() => { setSelectedWorld(word) }}
           >
             <Text style={styles.buttonText}>{word.word}</Text>
           </TouchableOpacity>
@@ -64,11 +107,14 @@ const RealtionWords = () => {
 
       </View>
       <View style={styles.half}>
-        {shuffleArray(random6elements).map(word => (
+        {randomElementsWords.definitions && randomElementsWords.definitions.map(word => (
           <TouchableOpacity
             key={word.id}
-            style={[styles.button, { backgroundColor: 'rgb(33, 150, 243)' }]}
-          // onPress={changeColor} 
+            style={[styles.button, {
+              backgroundColor: selectedDefinitions?.definition === word.definition ? 'green' : 'rgb(33, 150, 243)',
+              display: finishedFlows.includes(word.id) ? 'none' : 'flex'
+            }]}
+            onPress={() => { setSelectedDefinitions(word) }}
           >
             <Text style={styles.buttonText}>{word.definition}</Text>
           </TouchableOpacity>
