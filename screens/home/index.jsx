@@ -17,6 +17,11 @@ function HomeScreen({ navigation }) {
         title="Realtions between words"
         onPress={() => navigation.navigate('RealtionWords')}
       />
+      <Button
+        style={styles.text}
+        title="Split word"
+        onPress={() => navigation.navigate('SplitWord')}
+      />
 
       <Button
         style={styles.text}

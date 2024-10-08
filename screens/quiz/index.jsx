@@ -1,25 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
-import * as FileSystem from 'expo-file-system';
 import { Vibration } from 'react-native';
-import { Audio } from 'expo-av';
-import { shuffleArray } from '../../fn';
-
+import { playSound, readFile, shuffleArray } from '../../fn';
 
 
 const LearnWords = () => {
   const [fileContent, setFileContent] = useState(null);
   const [quizContent, setQuizContent] = useState(null);
   const [sound, setSound] = useState();
-
-  async function playSound(path) {
-    const { sound } = await Audio.Sound.createAsync(
-      require('../../assets/quiz-sucs.mp3')
-    );
-    await sound.setVolumeAsync(0.2);
-    setSound(sound);
-    await sound.playAsync();
-  }
 
 
   useEffect(() => {
@@ -31,23 +19,8 @@ const LearnWords = () => {
   }, [sound]);
 
 
-  const readFile = async () => {
-    const fileUri = `${FileSystem.documentDirectory}index.json`;
-    try {
-      const fileExists = await FileSystem.getInfoAsync(fileUri);
-      if (fileExists.exists) {
-        const content = await FileSystem.readAsStringAsync(fileUri);
-        setFileContent(JSON.parse(content));
-      } else {
-        console.log('Файл не знайдено');
-      }
-    } catch (error) {
-      console.error('Помилка при читанні файлу:', error);
-    }
-  };
-
   useEffect(() => {
-    readFile();
+    readFile(setFileContent);
   }, []);
 
 
@@ -59,16 +32,14 @@ const LearnWords = () => {
   }
 
   const clickOnAnswers = (isCorrect) => {
-
     if (isCorrect) {
-      playSound()
+      playSound(sound, setSound)
       setTimeout(() => {
         setQuizContent(renderQuiz())
       }, 400)
     } else {
       Vibration.vibrate(400);
     }
-
   }
 
   const renderQuiz = () => {
@@ -101,7 +72,6 @@ const LearnWords = () => {
               </View>
             ))
           }
-
         </View>
       );
     } else {

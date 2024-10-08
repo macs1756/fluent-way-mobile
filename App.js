@@ -6,6 +6,7 @@ import CreateWords from './screens/createWord';
 import Quiz from './screens/quiz';
 import Settings from './screens/settings';
 import RealtionWords from './screens/relations';
+import SplitWord from './screens/splitWord';
 
 const Stack = createStackNavigator();
 
@@ -18,6 +19,7 @@ export default function App() {
         <Stack.Screen name="Quiz" component={Quiz} />
         <Stack.Screen name="Settings" component={Settings} />
         <Stack.Screen name="RealtionWords" component={RealtionWords} />
+        <Stack.Screen name="SplitWord" component={SplitWord} />
       </Stack.Navigator>
     </NavigationContainer>
   );

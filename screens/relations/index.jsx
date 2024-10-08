@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { StyleSheet, Text, TouchableOpacity, Vibration, View } from 'react-native';
 import * as FileSystem from 'expo-file-system';
-import { shuffleArray } from '../../fn';
+import { playSound, shuffleArray } from '../../fn';
 
 
 
@@ -10,6 +10,7 @@ const RealtionWords = ({ navigation }) => {
   const [selectedWorld, setSelectedWorld] = useState(null)
   const [selectedDefinitions, setSelectedDefinitions] = useState(null)
   const [finishedFlows, setFinishedFlows] = useState([])
+  const [sound, setSound] = useState();
 
   const getRandomElements = (array, count) => {
     if (count > array.length) {
@@ -34,6 +35,14 @@ const RealtionWords = ({ navigation }) => {
       console.error('Помилка при читанні файлу:', error);
     }
   };
+
+  useEffect(() => {
+    return sound
+      ? () => {
+        sound.unloadAsync();
+      }
+      : undefined;
+  }, [sound]);
 
   useEffect(() => {
     readFile();
@@ -74,6 +83,7 @@ const RealtionWords = ({ navigation }) => {
   useEffect(() => {
     if (selectedWorld && selectedDefinitions) {
       if (selectedWorld.id === selectedDefinitions.id) {
+        playSound(sound, setSound)
         setSelectedWorld(null)
         setSelectedDefinitions(null)
         setFinishedFlows(prev => [...prev, selectedWorld.id])
