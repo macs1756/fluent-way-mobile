@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { Button, Modal, Text, View } from 'react-native';
 import { styles } from '../../styles';
-import { removeRootFile } from '../../fn';
+import { downloadFile, removeRootFile } from '../../fn';
 import * as FileSystem from 'expo-file-system';
 
 const Settings = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const fileUri = `${FileSystem.documentDirectory}index.json`;
+  const pathToSave = FileSystem.documentDirectory + `${Date.now()}.json`;
 
   return (
     <View style={styles.container}>
@@ -19,7 +20,8 @@ const Settings = () => {
 
       <Button
         style={styles.text}
-        title="Setting2"
+        title="Downloading root file with words"
+        onPress={() => downloadFile(fileUri, pathToSave)}
       />
 
       <Button

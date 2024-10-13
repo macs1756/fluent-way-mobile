@@ -11,6 +11,15 @@ export const removeRootFile = async (setState, fileUri) => {
   }
 }
 
+export const downloadFile = async (fileUri, pathToSave) => {
+  try {
+    await FileSystem.downloadAsync(fileUri, pathToSave);
+  } catch (error) {
+    console.error('Error downloading file:', error);
+  }
+};
+
+
 export function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
