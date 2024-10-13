@@ -52,3 +52,22 @@ export const readFile = async (setFileContent) => {
     console.error('Помилка при читанні файлу:', error);
   }
 };
+
+
+
+export const getCordinates = (index, event, setPositions) => {
+  const { x, y, width, height } = event.nativeEvent.layout;
+
+  //console.log(event);
+
+  const leftTop = { x, y };
+  const rightTop = { x: x + width, y };
+  const leftBottom = { x, y: y + height };
+  const rightBottom = { x: x + width, y: y + height };
+
+  setPositions((prev) => {
+    const newPositions = [...prev];
+    newPositions[index] = { leftTop, rightTop, leftBottom, rightBottom };
+    return newPositions;
+  });
+};
