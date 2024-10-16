@@ -4,11 +4,15 @@ import { Vibration } from 'react-native';
 import { playSound, readFile, shuffleArray } from '../../fn';
 
 
-const LearnWords = () => {
+const Quiz = ({ route }) => {
+
   const [fileContent, setFileContent] = useState(null);
   const [quizContent, setQuizContent] = useState(null);
   const [sound, setSound] = useState();
 
+  const { difficulty } = route.params;
+
+  console.log(difficulty);
 
   useEffect(() => {
     return sound
@@ -20,7 +24,7 @@ const LearnWords = () => {
 
 
   useEffect(() => {
-    readFile(setFileContent);
+    readFile(setFileContent, difficulty);
   }, []);
 
 
@@ -108,4 +112,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default LearnWords;
+export default Quiz;

@@ -38,8 +38,8 @@ export async function playSound(soundProp, setSound) {
 }
 
 
-export const readFile = async (setFileContent) => {
-  const fileUri = `${FileSystem.documentDirectory}index.json`;
+export const readFile = async (setFileContent, difficulty) => {
+  const fileUri = `${FileSystem.documentDirectory}${difficulty ?? 'index'}.json`;
   try {
     const fileExists = await FileSystem.getInfoAsync(fileUri);
     if (fileExists.exists) {

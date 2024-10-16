@@ -3,11 +3,14 @@ import { Button, Modal, Text, View } from 'react-native';
 import { styles } from '../../styles';
 import { downloadFile, removeRootFile } from '../../fn';
 import * as FileSystem from 'expo-file-system';
+import { useTranslation } from 'react-i18next';
 
 const Settings = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const fileUri = `${FileSystem.documentDirectory}index.json`;
   const pathToSave = FileSystem.documentDirectory + `${Date.now()}.json`;
+
+  const { t } = useTranslation();
 
   return (
     <View style={styles.container}>
@@ -26,7 +29,8 @@ const Settings = () => {
 
       <Button
         style={styles.text}
-        title="Setting3"
+        title={t('createNewWord')}
+        onPress={() => navigation.navigate('CreateWord')}
       />
 
 
