@@ -71,3 +71,11 @@ export const getCordinates = (index, event, setPositions) => {
     return newPositions;
   });
 };
+
+
+export function getUniqueRandomNumbers(sourceArray, word, count) {
+  const filteredArray = sourceArray.filter(num => num !== word);
+
+  const shuffledArray = filteredArray.sort(() => 0.5 - Math.random());
+  return shuffledArray.slice(0, count);
+}

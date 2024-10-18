@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 import { Vibration } from 'react-native';
-import { playSound, readFile, shuffleArray } from '../../fn';
-
+import { getUniqueRandomNumbers, playSound, readFile, shuffleArray } from '../../fn';
 
 const Quiz = ({ route }) => {
 
   const [fileContent, setFileContent] = useState(null);
   const [quizContent, setQuizContent] = useState(null);
+
   const [sound, setSound] = useState();
 
   const { difficulty } = route.params;
 
-  console.log(difficulty);
 
   useEffect(() => {
     return sound
@@ -28,13 +27,6 @@ const Quiz = ({ route }) => {
   }, []);
 
 
-  function getUniqueRandomNumbers(sourceArray, word, count) {
-    const filteredArray = sourceArray.filter(num => num !== word);
-
-    const shuffledArray = filteredArray.sort(() => 0.5 - Math.random());
-    return shuffledArray.slice(0, count);
-  }
-
   const clickOnAnswers = (isCorrect) => {
     if (isCorrect) {
       playSound(sound, setSound)
@@ -46,6 +38,7 @@ const Quiz = ({ route }) => {
     }
   }
 
+
   const renderQuiz = () => {
     if (fileContent && Array.isArray(fileContent)) {
       const randomIndex = Math.floor(Math.random() * fileContent.length);
@@ -55,6 +48,7 @@ const Quiz = ({ route }) => {
       let answers = uniqueRandomNumbers.map(e => ({ ...e, isCorrect: false }))
       answers = [...answers, { ...randomWord, isCorrect: true }]
       answers = shuffleArray(answers)
+
 
       return (
         <View>

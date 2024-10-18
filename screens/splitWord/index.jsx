@@ -1,20 +1,26 @@
-import React, { useEffect, useState } from 'react';
-import { StyleSheet, Text, View, PanResponder } from 'react-native';
-import { getCordinates, readFile } from '../../fn';
+import React, { useEffect, useMemo, useState } from 'react';
+import { Image, StyleSheet, Text, TouchableOpacity, Vibration, View } from 'react-native';
+import { playSound, readFile, shuffleArray } from '../../fn';
 import { styles } from '../../styles';
-import Draggable from 'react-native-draggable';
+
 
 const SplitWord = () => {
   const [wordsArr, setWordsArr] = useState([])
   const [currentWord, setCurrentWord] = useState(null)
-  const [coordinates, setCoordinates] = useState([{ x: 0, y: 0 }])
-  const [draggableCoordinates, setDraggableCoordinates] = useState([{ x: 0, y: 0 }])
-
-
+  const [letterArray, setLetterArray] = useState([])
+  const [sound, setSound] = useState();
 
   useEffect(() => {
     readFile(setWordsArr);
   }, []);
+
+  useEffect(() => {
+    return sound
+      ? () => {
+        sound.unloadAsync();
+      }
+      : undefined;
+  }, [sound]);
 
   useEffect(() => {
     if (wordsArr.length > 0) {
@@ -23,83 +29,124 @@ const SplitWord = () => {
     }
   }, [wordsArr])
 
-
-  useEffect(() => {
-    console.log(coordinates[0]);
-  },)
-
-  const moveDraggable = (event, i) => {
-    const x = event?.nativeEvent.pageX
-    const y = event?.nativeEvent.pageY
-  console.log(y);
+  const onClickPillow = (letter, index) => {
+    setLetterArray([...letterArray, { letter, index }])
   }
 
+  const removeLastLetter = () => {
+    setLetterArray([])
+  }
 
+  const tranformedResult = letterArray.map(e => e.letter).join('')
 
+  useEffect(() => {
+
+    if (currentWord) {
+      if (currentWord.word.length === tranformedResult.length) {
+
+        if (currentWord.word.toUpperCase() === tranformedResult.toUpperCase()) {
+          playSound(sound, setSound)
+          readFile(setWordsArr);
+          setLetterArray([])
+        } else {
+          setLetterArray([])
+          Vibration.vibrate(400);
+        }
+
+      }
+    }
+
+  }, [letterArray, currentWord])
+
+  const wordLetters = useMemo(() => {
+    return currentWord?.word ? shuffleArray(currentWord.word.split('')) : [];
+  }, [currentWord]);
 
   return (
     <View style={styles.container}>
-      <Text style={{ fontSize: 24, letterSpacing: 3 }}>{currentWord?.definition}</Text>
+      <Text style={stylesSplit.primaryText}>{currentWord?.definition}</Text>
+
+      <View style={stylesSplit.borderDekor}></View>
+
+      <View style={stylesSplit.pillowDefinitionContainer}>
+
+        <Text style={stylesSplit.primaryText}>
+          {tranformedResult}
+        </Text>
+
+        <TouchableOpacity
+          onPress={removeLastLetter}
+          style={{ padding: 4 }}>
+          {Boolean(letterArray.length) &&
+            <Image style={{ width: 24, height: 24 }} source={require('../../assets/remove-letter.png')} />}
+        </TouchableOpacity>
+
+      </View>
+
+
       <View>
 
         <View style={stylesSplit.pillowContainer}>
           {
-            currentWord?.word && currentWord.word
-              .split('')
-              .map((e, i) => (
-                <View
-                  onLayout={(event) => getCordinates(i, event, setCoordinates)}
-                  style={stylesSplit.greyPillow}
-                >
-                  <Text style={{ color: '#000' }}> </Text>
-                </View>
-              ))
+            wordLetters.map((e, i) => (
+              <View
+                key={i + new Date()}
+                style={stylesSplit.greyPillow}
+              >
+                <TouchableOpacity
+                  onPress={() => { onClickPillow(e.toUpperCase(), i) }}
+                  style={[
+                    stylesSplit.greyPillowText,
+                    { backgroundColor: letterArray.some(l => l.index === i) ? 'transparent' : 'green' }
+                  ]}>
+                  <Text>
+                    {e.toUpperCase()}
+                  </Text>
+                </TouchableOpacity>
+              </View>
+            ))
+
           }
 
-          {
-            coordinates[currentWord?.word.length - 1] && currentWord?.word && currentWord.word
-              .split('')
-              .map((e, i) => (
-                <Draggable
-                  key={i}
-                  x={coordinates[i]?.leftTop?.x + 12}
-                  y={coordinates[i]?.leftTop?.y + 8}
-                  renderSize={50}
-                  fontSize={24}
-                  renderColor='#3944BC'
-                  isCircle
-                  onDrag={(event, i) => moveDraggable(event, i)}
-                >
-                  <View style={{
-                    width: 50,
-                    aspectRatio: 1,
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                  }}>
 
-                    <Text
-                      style={{ color: '#FFF', fontWeight: 700 }}
 
-                    >{e}</Text>
-
-                  </View>
-
-                </Draggable>
-              ))
-          }
         </View>
       </View>
-    </View>
+    </View >
   );
 };
 
 
 const stylesSplit = StyleSheet.create({
+  primaryText: {
+    fontSize: 24,
+    letterSpacing: 3,
+  },
+  pillowDefinitionContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12
+  },
   pillowContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'start',
     width: '100%',
+  },
+  borderDekor: {
+    borderBottomColor: 'black',
+    borderBottomWidth: 2,
+    width: '100%',
+    marginTop: 0,
+    marginBottom: 0,
+  },
+  greyPillowText: {
+    fontSize: 20,
+    width: '100%',
+    height: '100%',
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   greyPillow: {
     alignItems: 'center',
