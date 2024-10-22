@@ -30,7 +30,7 @@ export function shuffleArray(array) {
 
 export async function playSound(soundProp, setSound) {
   const { sound } = await Audio.Sound.createAsync(
-    require('../assets/quiz-sucs.mp3')
+    require('../../assets/quiz-sucs.mp3')
   );
   await sound.setVolumeAsync(0.2);
   setSound(soundProp);
