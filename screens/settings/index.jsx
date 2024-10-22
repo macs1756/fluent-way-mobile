@@ -5,7 +5,7 @@ import { downloadFile, removeRootFile } from '../../fn';
 import * as FileSystem from 'expo-file-system';
 import { useTranslation } from 'react-i18next';
 
-const Settings = () => {
+const Settings = ({ navigation }) => {
   const [modalVisible, setModalVisible] = useState(false);
   const fileUri = `${FileSystem.documentDirectory}index.json`;
   const pathToSave = FileSystem.documentDirectory + `${Date.now()}.json`;
