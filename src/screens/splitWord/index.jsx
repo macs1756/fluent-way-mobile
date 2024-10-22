@@ -78,7 +78,7 @@ const SplitWord = () => {
           onPress={removeLastLetter}
           style={{ padding: 4 }}>
           {Boolean(letterArray.length) &&
-            <Image style={{ width: 24, height: 24 }} source={require('../../assets/remove-letter.png')} />}
+            <Image style={{ width: 24, height: 24 }} source={require('../../../assets/remove-letter.png')} />}
         </TouchableOpacity>
 
       </View>

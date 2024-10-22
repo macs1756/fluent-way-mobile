@@ -2,19 +2,19 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import CreateWords from './screens/createWord';
-import Quiz from './screens/quiz';
-import Settings from './screens/settings';
-import RealtionWords from './screens/relations';
-import SplitWord from './screens/splitWord';
+//Routes
+import CreateWords from './src/screens/createWord';
+import Quiz from './src/screens/quiz';
+import Settings from './src/screens/settings';
+import RealtionWords from './src/screens/relations';
+import SplitWord from './src/screens/splitWord';
+import HomeScreen from './src/screens/homeRoot';
+import ChooseLevel from './src/screens/difficultyLevels';
+import FlowsMenu from './src/screens/flowsMenu';
 
-//i1
+//i18n
 import i18n from './i18n';
 import { I18nextProvider } from 'react-i18next';
-
-import HomeScreen from './screens/homeRoot';
-import ChooseLevel from './screens/difficultyLevels';
-import FlowsMenu from './screens/flowsMenu';
 
 
 const Stack = createStackNavigator();
