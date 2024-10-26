@@ -968,11 +968,5 @@
     "word": "trustworthy",
     "definition": "надійний",
     "progress": 0
-  },
-  { "id": 981, "word": "tune", "definition": "мелодія", "progress": 0 },
-  { "id": 982, "word": "usual", "definition": "звичний", "progress": 0 },
-  { "id": 983, "word": "visitor", "definition": "відвідувач", "progress": 0 },
-  { "id": 984, "word": "weird", "definition": "дивний", "progress": 0 },
-  { "id": 985, "word": "worry", "definition": "хвилюватися", "progress": 0 },
-  { "id": 986, "word": "yawn", "definition": "позіхати", "progress": 0 }
+  }
 ]

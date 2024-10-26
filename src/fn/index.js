@@ -46,10 +46,10 @@ export const readFile = async (setFileContent, difficulty) => {
       const content = await FileSystem.readAsStringAsync(fileUri);
       setFileContent(JSON.parse(content));
     } else {
-      console.log('Файл не знайдено');
+      console.log('File not found');
     }
   } catch (error) {
-    console.error('Помилка при читанні файлу:', error);
+    console.error('Error on reading file:', error);
   }
 };
 

@@ -1,0 +1,1998 @@
+[
+  { "id": 1, "word": "abandon", "definition": "покидати", "progress": 0 },
+  { "id": 2, "word": "adapt", "definition": "адаптуватися", "progress": 0 },
+  { "id": 3, "word": "advocate", "definition": "захищати", "progress": 0 },
+  { "id": 4, "word": "analyze", "definition": "аналізувати", "progress": 0 },
+  { "id": 5, "word": "assess", "definition": "оцінювати", "progress": 0 },
+  { "id": 6, "word": "attain", "definition": "досягати", "progress": 0 },
+  { "id": 7, "word": "beneficial", "definition": "корисний", "progress": 0 },
+  { "id": 8, "word": "capable", "definition": "здатний", "progress": 0 },
+  { "id": 9, "word": "clarify", "definition": "прояснювати", "progress": 0 },
+  {
+    "id": 10,
+    "word": "collaborate",
+    "definition": "співпрацювати",
+    "progress": 0
+  },
+  { "id": 11, "word": "compromise", "definition": "компроміс", "progress": 0 },
+  { "id": 12, "word": "contribute", "definition": "вносити", "progress": 0 },
+  { "id": 13, "word": "convene", "definition": "скликати", "progress": 0 },
+  {
+    "id": 14,
+    "word": "coordinate",
+    "definition": "координувати",
+    "progress": 0
+  },
+  { "id": 15, "word": "dedicate", "definition": "присвячувати", "progress": 0 },
+  { "id": 16, "word": "deem", "definition": "вважати", "progress": 0 },
+  {
+    "id": 17,
+    "word": "distribute",
+    "definition": "розподіляти",
+    "progress": 0
+  },
+  { "id": 18, "word": "diverse", "definition": "різноманітний", "progress": 0 },
+  { "id": 19, "word": "eliminate", "definition": "усунути", "progress": 0 },
+  { "id": 20, "word": "enhance", "definition": "посилити", "progress": 0 },
+  { "id": 21, "word": "evaluate", "definition": "оцінювати", "progress": 0 },
+  { "id": 22, "word": "expand", "definition": "розширяти", "progress": 0 },
+  {
+    "id": 23,
+    "word": "facilitate",
+    "definition": "полегшувати",
+    "progress": 0
+  },
+  { "id": 24, "word": "formulate", "definition": "формулювати", "progress": 0 },
+  { "id": 25, "word": "generate", "definition": "генерувати", "progress": 0 },
+  {
+    "id": 26,
+    "word": "hypothesize",
+    "definition": "гипотезувати",
+    "progress": 0
+  },
+  {
+    "id": 27,
+    "word": "illustrate",
+    "definition": "ілюструвати",
+    "progress": 0
+  },
+  { "id": 28, "word": "impact", "definition": "вплив", "progress": 0 },
+  {
+    "id": 29,
+    "word": "implement",
+    "definition": "впроваджувати",
+    "progress": 0
+  },
+  { "id": 30, "word": "improve", "definition": "покращувати", "progress": 0 },
+  { "id": 31, "word": "influence", "definition": "впливати", "progress": 0 },
+  { "id": 32, "word": "integrate", "definition": "інтегрувати", "progress": 0 },
+  { "id": 33, "word": "interact", "definition": "взаємодіяти", "progress": 0 },
+  {
+    "id": 34,
+    "word": "investigate",
+    "definition": "досліджувати",
+    "progress": 0
+  },
+  {
+    "id": 35,
+    "word": "justify",
+    "definition": "обгрунтовувати",
+    "progress": 0
+  },
+  { "id": 36, "word": "maintain", "definition": "підтримувати", "progress": 0 },
+  { "id": 37, "word": "motivate", "definition": "мотивувати", "progress": 0 },
+  { "id": 38, "word": "obtain", "definition": "отримувати", "progress": 0 },
+  {
+    "id": 39,
+    "word": "participate",
+    "definition": "брати участь",
+    "progress": 0
+  },
+  { "id": 40, "word": "persuade", "definition": "переконувати", "progress": 0 },
+  {
+    "id": 41,
+    "word": "prioritize",
+    "definition": "визначати пріоритети",
+    "progress": 0
+  },
+  { "id": 42, "word": "propose", "definition": "пропонувати", "progress": 0 },
+  { "id": 43, "word": "regulate", "definition": "регулювати", "progress": 0 },
+  { "id": 44, "word": "reiterate", "definition": "повторювати", "progress": 0 },
+  { "id": 45, "word": "reinforce", "definition": "посилити", "progress": 0 },
+  { "id": 46, "word": "relate", "definition": "відноситися", "progress": 0 },
+  { "id": 47, "word": "rely", "definition": "покладатися", "progress": 0 },
+  {
+    "id": 48,
+    "word": "represent",
+    "definition": "представляти",
+    "progress": 0
+  },
+  { "id": 49, "word": "respond", "definition": "відповідати", "progress": 0 },
+  { "id": 50, "word": "reveal", "definition": "виявляти", "progress": 0 },
+  { "id": 51, "word": "speculate", "definition": "спекулювати", "progress": 0 },
+  {
+    "id": 52,
+    "word": "strategize",
+    "definition": "стратегувати",
+    "progress": 0
+  },
+  { "id": 53, "word": "summarize", "definition": "підсумувати", "progress": 0 },
+  { "id": 54, "word": "sustain", "definition": "підтримувати", "progress": 0 },
+  {
+    "id": 55,
+    "word": "transform",
+    "definition": "трансформувати",
+    "progress": 0
+  },
+  { "id": 56, "word": "validate", "definition": "перевіряти", "progress": 0 },
+  {
+    "id": 57,
+    "word": "advancement",
+    "definition": "просування",
+    "progress": 0
+  },
+  {
+    "id": 58,
+    "word": "commitment",
+    "definition": "зобов'язання",
+    "progress": 0
+  },
+  { "id": 59, "word": "consequence", "definition": "наслідок", "progress": 0 },
+  { "id": 60, "word": "dilemma", "definition": "дилема", "progress": 0 },
+  { "id": 61, "word": "exposure", "definition": "вплив", "progress": 0 },
+  {
+    "id": 62,
+    "word": "fundamental",
+    "definition": "фундаментальний",
+    "progress": 0
+  },
+  { "id": 63, "word": "imminent", "definition": "неминучий", "progress": 0 },
+  {
+    "id": 64,
+    "word": "implication",
+    "definition": "імплікація",
+    "progress": 0
+  },
+  { "id": 65, "word": "innovation", "definition": "інновація", "progress": 0 },
+  {
+    "id": 66,
+    "word": "integration",
+    "definition": "інтеграція",
+    "progress": 0
+  },
+  {
+    "id": 67,
+    "word": "intersection",
+    "definition": "перехрестя",
+    "progress": 0
+  },
+  {
+    "id": 68,
+    "word": "interpretation",
+    "definition": "інтерпретація",
+    "progress": 0
+  },
+  { "id": 69, "word": "investment", "definition": "інвестиція", "progress": 0 },
+  {
+    "id": 70,
+    "word": "justification",
+    "definition": "обґрунтування",
+    "progress": 0
+  },
+  {
+    "id": 71,
+    "word": "manipulate",
+    "definition": "маніпулювати",
+    "progress": 0
+  },
+  { "id": 72, "word": "perception", "definition": "сприйняття", "progress": 0 },
+  {
+    "id": 73,
+    "word": "precaution",
+    "definition": "обережність",
+    "progress": 0
+  },
+  {
+    "id": 74,
+    "word": "qualification",
+    "definition": "кваліфікація",
+    "progress": 0
+  },
+  { "id": 75, "word": "reassessment", "definition": "перегляд", "progress": 0 },
+  { "id": 76, "word": "reform", "definition": "реформа", "progress": 0 },
+  {
+    "id": 77,
+    "word": "reliability",
+    "definition": "надійність",
+    "progress": 0
+  },
+  { "id": 78, "word": "resolution", "definition": "резолюція", "progress": 0 },
+  {
+    "id": 79,
+    "word": "retrospective",
+    "definition": "ретроспективний",
+    "progress": 0
+  },
+  {
+    "id": 80,
+    "word": "significance",
+    "definition": "значимість",
+    "progress": 0
+  },
+  {
+    "id": 81,
+    "word": "stimulation",
+    "definition": "стимуляція",
+    "progress": 0
+  },
+  { "id": 82, "word": "substantial", "definition": "суттєвий", "progress": 0 },
+  {
+    "id": 83,
+    "word": "sustainability",
+    "definition": "стійкість",
+    "progress": 0
+  },
+  { "id": 84, "word": "technology", "definition": "технологія", "progress": 0 },
+  {
+    "id": 85,
+    "word": "transparency",
+    "definition": "прозорість",
+    "progress": 0
+  },
+  {
+    "id": 86,
+    "word": "utilize",
+    "definition": "використовувати",
+    "progress": 0
+  },
+  {
+    "id": 87,
+    "word": "viability",
+    "definition": "життєздатність",
+    "progress": 0
+  },
+  {
+    "id": 88,
+    "word": "vulnerability",
+    "definition": "вразливість",
+    "progress": 0
+  },
+  { "id": 89, "word": "welfare", "definition": "благополуччя", "progress": 0 },
+  { "id": 90, "word": "withdrawal", "definition": "виведення", "progress": 0 },
+  { "id": 91, "word": "adaptation", "definition": "адаптація", "progress": 0 },
+  {
+    "id": 92,
+    "word": "anticipation",
+    "definition": "очікування",
+    "progress": 0
+  },
+  { "id": 93, "word": "assertion", "definition": "заява", "progress": 0 },
+  {
+    "id": 94,
+    "word": "collaboration",
+    "definition": "співпраця",
+    "progress": 0
+  },
+  {
+    "id": 95,
+    "word": "consolidate",
+    "definition": "консолідувати",
+    "progress": 0
+  },
+  {
+    "id": 96,
+    "word": "differentiation",
+    "definition": "диференціація",
+    "progress": 0
+  },
+  {
+    "id": 97,
+    "word": "discrepancy",
+    "definition": "невідповідність",
+    "progress": 0
+  },
+  { "id": 98, "word": "evaluation", "definition": "оцінка", "progress": 0 },
+  {
+    "id": 99,
+    "word": "improvement",
+    "definition": "покращення",
+    "progress": 0
+  },
+  { "id": 100, "word": "relevance", "definition": "доречність", "progress": 0 },
+
+  { "id": 101, "word": "abundant", "definition": "багатий", "progress": 0 },
+  {
+    "id": 102,
+    "word": "accumulate",
+    "definition": "накопичувати",
+    "progress": 0
+  },
+  { "id": 103, "word": "accurate", "definition": "точний", "progress": 0 },
+  {
+    "id": 104,
+    "word": "beneficiary",
+    "definition": "вигодонабувач",
+    "progress": 0
+  },
+  { "id": 105, "word": "cautious", "definition": "обережний", "progress": 0 },
+  {
+    "id": 106,
+    "word": "coherent",
+    "definition": "послідовний",
+    "progress": 0
+  },
+  {
+    "id": 107,
+    "word": "comprehend",
+    "definition": "усвідомлювати",
+    "progress": 0
+  },
+  {
+    "id": 108,
+    "word": "complicate",
+    "definition": "ускладнювати",
+    "progress": 0
+  },
+  {
+    "id": 109,
+    "word": "consensus",
+    "definition": "консенсус",
+    "progress": 0
+  },
+  { "id": 110, "word": "contribute", "definition": "вносити", "progress": 0 },
+  {
+    "id": 111,
+    "word": "cumulative",
+    "definition": "кумулятивний",
+    "progress": 0
+  },
+  { "id": 112, "word": "deduction", "definition": "висновок", "progress": 0 },
+  { "id": 113, "word": "depict", "definition": "зображати", "progress": 0 },
+  {
+    "id": 114,
+    "word": "deviation",
+    "definition": "відхилення",
+    "progress": 0
+  },
+  { "id": 115, "word": "dilemma", "definition": "дилема", "progress": 0 },
+  {
+    "id": 116,
+    "word": "disseminate",
+    "definition": "розповсюджувати",
+    "progress": 0
+  },
+  {
+    "id": 117,
+    "word": "dominant",
+    "definition": "домінуючий",
+    "progress": 0
+  },
+  {
+    "id": 118,
+    "word": "elaboration",
+    "definition": "розробка",
+    "progress": 0
+  },
+  {
+    "id": 119,
+    "word": "enhancement",
+    "definition": "покращення",
+    "progress": 0
+  },
+  {
+    "id": 120,
+    "word": "equivalent",
+    "definition": "еквівалент",
+    "progress": 0
+  },
+  {
+    "id": 121,
+    "word": "exceptional",
+    "definition": "винятковий",
+    "progress": 0
+  },
+  { "id": 122, "word": "exhibit", "definition": "виставляти", "progress": 0 },
+  {
+    "id": 123,
+    "word": "explanation",
+    "definition": "пояснення",
+    "progress": 0
+  },
+  {
+    "id": 124,
+    "word": "facilitation",
+    "definition": "полегшення",
+    "progress": 0
+  },
+  {
+    "id": 125,
+    "word": "foundation",
+    "definition": "фундамент",
+    "progress": 0
+  },
+  {
+    "id": 126,
+    "word": "guideline",
+    "definition": "настанови",
+    "progress": 0
+  },
+  {
+    "id": 127,
+    "word": "impartial",
+    "definition": "неупереджений",
+    "progress": 0
+  },
+  {
+    "id": 128,
+    "word": "implication",
+    "definition": "імплікація",
+    "progress": 0
+  },
+  { "id": 129, "word": "indicate", "definition": "вказувати", "progress": 0 },
+  { "id": 130, "word": "influence", "definition": "впливати", "progress": 0 },
+  {
+    "id": 131,
+    "word": "initiative",
+    "definition": "ініціатива",
+    "progress": 0
+  },
+  {
+    "id": 132,
+    "word": "intermediate",
+    "definition": "середній",
+    "progress": 0
+  },
+  {
+    "id": 133,
+    "word": "manipulation",
+    "definition": "маніпуляція",
+    "progress": 0
+  },
+  {
+    "id": 134,
+    "word": "meticulous",
+    "definition": "досконалий",
+    "progress": 0
+  },
+  {
+    "id": 135,
+    "word": "negotiation",
+    "definition": "переговори",
+    "progress": 0
+  },
+  {
+    "id": 136,
+    "word": "observation",
+    "definition": "спостереження",
+    "progress": 0
+  },
+  {
+    "id": 137,
+    "word": "perspective",
+    "definition": "перспектива",
+    "progress": 0
+  },
+  {
+    "id": 138,
+    "word": "pioneering",
+    "definition": "новаторський",
+    "progress": 0
+  },
+  {
+    "id": 139,
+    "word": "predict",
+    "definition": "передбачити",
+    "progress": 0
+  },
+  { "id": 140, "word": "principle", "definition": "принцип", "progress": 0 },
+  {
+    "id": 141,
+    "word": "proficiency",
+    "definition": "кваліфікація",
+    "progress": 0
+  },
+  {
+    "id": 142,
+    "word": "prospective",
+    "definition": "перспективний",
+    "progress": 0
+  },
+  {
+    "id": 143,
+    "word": "regulation",
+    "definition": "регулювання",
+    "progress": 0
+  },
+  { "id": 144, "word": "reliable", "definition": "надійний", "progress": 0 },
+  {
+    "id": 145,
+    "word": "researcher",
+    "definition": "дослідник",
+    "progress": 0
+  },
+  {
+    "id": 146,
+    "word": "saturation",
+    "definition": "насищення",
+    "progress": 0
+  },
+  {
+    "id": 147,
+    "word": "significant",
+    "definition": "значний",
+    "progress": 0
+  },
+  {
+    "id": 148,
+    "word": "sustainability",
+    "definition": "стійкість",
+    "progress": 0
+  },
+  { "id": 149, "word": "tangible", "definition": "відчутний", "progress": 0 },
+  {
+    "id": 150,
+    "word": "transformative",
+    "definition": "трансформаційний",
+    "progress": 0
+  },
+  {
+    "id": 151,
+    "word": "underlying",
+    "definition": "основний",
+    "progress": 0
+  },
+  {
+    "id": 152,
+    "word": "utilization",
+    "definition": "використання",
+    "progress": 0
+  },
+  {
+    "id": 153,
+    "word": "verification",
+    "definition": "перевірка",
+    "progress": 0
+  },
+  {
+    "id": 154,
+    "word": "vigilance",
+    "definition": "пильність",
+    "progress": 0
+  },
+  {
+    "id": 155,
+    "word": "adaptability",
+    "definition": "адаптивність",
+    "progress": 0
+  },
+  {
+    "id": 156,
+    "word": "advancement",
+    "definition": "просування",
+    "progress": 0
+  },
+  {
+    "id": 157,
+    "word": "collaboration",
+    "definition": "співпраця",
+    "progress": 0
+  },
+  {
+    "id": 158,
+    "word": "consolidation",
+    "definition": "консолідація",
+    "progress": 0
+  },
+  { "id": 159, "word": "counterpart", "definition": "аналог", "progress": 0 },
+  {
+    "id": 160,
+    "word": "decentralization",
+    "definition": "децентралізація",
+    "progress": 0
+  },
+  {
+    "id": 161,
+    "word": "dedication",
+    "definition": "відданість",
+    "progress": 0
+  },
+  {
+    "id": 162,
+    "word": "differentiation",
+    "definition": "диференціація",
+    "progress": 0
+  },
+  {
+    "id": 163,
+    "word": "enhancement",
+    "definition": "покращення",
+    "progress": 0
+  },
+  {
+    "id": 164,
+    "word": "entrepreneurial",
+    "definition": "підприємницький",
+    "progress": 0
+  },
+  {
+    "id": 165,
+    "word": "establishment",
+    "definition": "установлення",
+    "progress": 0
+  },
+  {
+    "id": 166,
+    "word": "globalization",
+    "definition": "глобалізація",
+    "progress": 0
+  },
+  {
+    "id": 167,
+    "word": "improvement",
+    "definition": "покращення",
+    "progress": 0
+  },
+  {
+    "id": 168,
+    "word": "infrastructure",
+    "definition": "інфраструктура",
+    "progress": 0
+  },
+  {
+    "id": 169,
+    "word": "intellectual",
+    "definition": "інтелектуальний",
+    "progress": 0
+  },
+  {
+    "id": 170,
+    "word": "legislation",
+    "definition": "законодавство",
+    "progress": 0
+  },
+  { "id": 171, "word": "abandon", "definition": "покидати", "progress": 0 },
+  { "id": 172, "word": "acquire", "definition": "набирати", "progress": 0 },
+  { "id": 173, "word": "allocate", "definition": "виділяти", "progress": 0 },
+  {
+    "id": 174,
+    "word": "alternative",
+    "definition": "альтернатива",
+    "progress": 0
+  },
+  {
+    "id": 175,
+    "word": "analyze",
+    "definition": "аналізувати",
+    "progress": 0
+  },
+  {
+    "id": 176,
+    "word": "anticipate",
+    "definition": "очікувати",
+    "progress": 0
+  },
+  { "id": 177, "word": "approach", "definition": "підхід", "progress": 0 },
+  {
+    "id": 178,
+    "word": "arbitrary",
+    "definition": "произвольний",
+    "progress": 0
+  },
+  { "id": 179, "word": "assess", "definition": "оцінювати", "progress": 0 },
+  {
+    "id": 180,
+    "word": "assumption",
+    "definition": "припущення",
+    "progress": 0
+  },
+  { "id": 181, "word": "attain", "definition": "досягати", "progress": 0 },
+  { "id": 182, "word": "behavior", "definition": "поведінка", "progress": 0 },
+  {
+    "id": 183,
+    "word": "certify",
+    "definition": "сертифікувати",
+    "progress": 0
+  },
+  {
+    "id": 184,
+    "word": "collaborate",
+    "definition": "співпрацювати",
+    "progress": 0
+  },
+  {
+    "id": 185,
+    "word": "communicate",
+    "definition": "спілкуватися",
+    "progress": 0
+  },
+  {
+    "id": 186,
+    "word": "compensate",
+    "definition": "компенсувати",
+    "progress": 0
+  },
+  {
+    "id": 187,
+    "word": "compromise",
+    "definition": "компроміс",
+    "progress": 0
+  },
+  {
+    "id": 188,
+    "word": "consequence",
+    "definition": "наслідок",
+    "progress": 0
+  },
+  { "id": 189, "word": "contribute", "definition": "вносити", "progress": 0 },
+  { "id": 190, "word": "criteria", "definition": "критерії", "progress": 0 },
+  {
+    "id": 191,
+    "word": "cultivate",
+    "definition": "культивувати",
+    "progress": 0
+  },
+  {
+    "id": 192,
+    "word": "decrease",
+    "definition": "зменшувати",
+    "progress": 0
+  },
+  {
+    "id": 193,
+    "word": "diminish",
+    "definition": "зменшувати",
+    "progress": 0
+  },
+  {
+    "id": 194,
+    "word": "disclose",
+    "definition": "розкривати",
+    "progress": 0
+  },
+  {
+    "id": 195,
+    "word": "distinction",
+    "definition": "відмінність",
+    "progress": 0
+  },
+  {
+    "id": 196,
+    "word": "enhance",
+    "definition": "покращувати",
+    "progress": 0
+  },
+  { "id": 197, "word": "evaluate", "definition": "оцінювати", "progress": 0 },
+  { "id": 198, "word": "expand", "definition": "розширювати", "progress": 0 },
+  {
+    "id": 199,
+    "word": "exceed",
+    "definition": "перевищувати",
+    "progress": 0
+  },
+  {
+    "id": 200,
+    "word": "expandable",
+    "definition": "розширювальний",
+    "progress": 0
+  },
+  { "id": 201, "word": "facilitate", "definition": "сприяти", "progress": 0 },
+  {
+    "id": 202,
+    "word": "generate",
+    "definition": "генерувати",
+    "progress": 0
+  },
+  {
+    "id": 203,
+    "word": "highlight",
+    "definition": "підкреслювати",
+    "progress": 0
+  },
+  {
+    "id": 204,
+    "word": "hypothesis",
+    "definition": "гіпотеза",
+    "progress": 0
+  },
+  {
+    "id": 205,
+    "word": "implement",
+    "definition": "впроваджувати",
+    "progress": 0
+  },
+  { "id": 206, "word": "indicate", "definition": "вказувати", "progress": 0 },
+  {
+    "id": 207,
+    "word": "integrate",
+    "definition": "інтегрувати",
+    "progress": 0
+  },
+  {
+    "id": 208,
+    "word": "intervene",
+    "definition": "втручатися",
+    "progress": 0
+  },
+  {
+    "id": 209,
+    "word": "investigate",
+    "definition": "досліджувати",
+    "progress": 0
+  },
+  { "id": 210, "word": "issue", "definition": "питання", "progress": 0 },
+  {
+    "id": 211,
+    "word": "maintain",
+    "definition": "підтримувати",
+    "progress": 0
+  },
+  {
+    "id": 212,
+    "word": "modify",
+    "definition": "модифікувати",
+    "progress": 0
+  },
+  {
+    "id": 213,
+    "word": "motivation",
+    "definition": "мотивація",
+    "progress": 0
+  },
+  {
+    "id": 214,
+    "word": "negotiate",
+    "definition": "вести переговори",
+    "progress": 0
+  },
+  { "id": 215, "word": "obtain", "definition": "отримувати", "progress": 0 },
+  { "id": 216, "word": "overcome", "definition": "подолати", "progress": 0 },
+  {
+    "id": 217,
+    "word": "participate",
+    "definition": "брати участь",
+    "progress": 0
+  },
+  {
+    "id": 218,
+    "word": "persuade",
+    "definition": "переконати",
+    "progress": 0
+  },
+  {
+    "id": 219,
+    "word": "propose",
+    "definition": "пропонувати",
+    "progress": 0
+  },
+  { "id": 220, "word": "regard", "definition": "розглядати", "progress": 0 },
+  { "id": 221, "word": "resolve", "definition": "вирішувати", "progress": 0 },
+  {
+    "id": 222,
+    "word": "respond",
+    "definition": "відповідати",
+    "progress": 0
+  },
+  {
+    "id": 223,
+    "word": "restructure",
+    "definition": "перебудовувати",
+    "progress": 0
+  },
+  { "id": 224, "word": "revise", "definition": "переглядати", "progress": 0 },
+  {
+    "id": 225,
+    "word": "sustain",
+    "definition": "підтримувати",
+    "progress": 0
+  },
+  { "id": 226, "word": "target", "definition": "ціль", "progress": 0 },
+  { "id": 227, "word": "trend", "definition": "тенденція", "progress": 0 },
+  {
+    "id": 228,
+    "word": "understand",
+    "definition": "розуміти",
+    "progress": 0
+  },
+  {
+    "id": 229,
+    "word": "utilize",
+    "definition": "використовувати",
+    "progress": 0
+  },
+  {
+    "id": 230,
+    "word": "validate",
+    "definition": "перевіряти",
+    "progress": 0
+  },
+  { "id": 231, "word": "verify", "definition": "перевіряти", "progress": 0 },
+  { "id": 232, "word": "abrupt", "definition": "раптовий", "progress": 0 },
+  { "id": 233, "word": "assess", "definition": "оцінювати", "progress": 0 },
+  { "id": 234, "word": "attitude", "definition": "ставлення", "progress": 0 },
+  {
+    "id": 235,
+    "word": "beneficial",
+    "definition": "корисний",
+    "progress": 0
+  },
+  { "id": 236, "word": "capable", "definition": "здатний", "progress": 0 },
+  { "id": 237, "word": "cease", "definition": "припиняти", "progress": 0 },
+  {
+    "id": 238,
+    "word": "coherent",
+    "definition": "послідовний",
+    "progress": 0
+  },
+  {
+    "id": 239,
+    "word": "compensate",
+    "definition": "компенсувати",
+    "progress": 0
+  },
+  {
+    "id": 240,
+    "word": "consolidate",
+    "definition": "консолідувати",
+    "progress": 0
+  },
+  { "id": 241, "word": "contribute", "definition": "вносити", "progress": 0 },
+  {
+    "id": 242,
+    "word": "convince",
+    "definition": "переконати",
+    "progress": 0
+  },
+  {
+    "id": 243,
+    "word": "cumulative",
+    "definition": "кумулятивний",
+    "progress": 0
+  },
+  { "id": 244, "word": "defer", "definition": "відкладати", "progress": 0 },
+  {
+    "id": 245,
+    "word": "diminish",
+    "definition": "зменшувати",
+    "progress": 0
+  },
+  {
+    "id": 246,
+    "word": "discrepancy",
+    "definition": "невідповідність",
+    "progress": 0
+  },
+  {
+    "id": 247,
+    "word": "disseminate",
+    "definition": "поширювати",
+    "progress": 0
+  },
+  { "id": 248, "word": "dissolve", "definition": "розчиняти", "progress": 0 },
+  {
+    "id": 249,
+    "word": "eliminate",
+    "definition": "елімінувати",
+    "progress": 0
+  },
+  {
+    "id": 250,
+    "word": "emphasize",
+    "definition": "підкреслити",
+    "progress": 0
+  },
+  {
+    "id": 251,
+    "word": "exhibit",
+    "definition": "експонувати",
+    "progress": 0
+  },
+  {
+    "id": 252,
+    "word": "expansion",
+    "definition": "розширення",
+    "progress": 0
+  },
+  { "id": 253, "word": "facilitate", "definition": "сприяти", "progress": 0 },
+  {
+    "id": 254,
+    "word": "fluctuate",
+    "definition": "коливатися",
+    "progress": 0
+  },
+  {
+    "id": 255,
+    "word": "formulate",
+    "definition": "формулювати",
+    "progress": 0
+  },
+  { "id": 256, "word": "frequent", "definition": "частий", "progress": 0 },
+  {
+    "id": 257,
+    "word": "generate",
+    "definition": "генерувати",
+    "progress": 0
+  },
+  {
+    "id": 258,
+    "word": "hypothetical",
+    "definition": "гіпотетичний",
+    "progress": 0
+  },
+  {
+    "id": 259,
+    "word": "immigrate",
+    "definition": "іммігрувати",
+    "progress": 0
+  },
+  { "id": 260, "word": "incentive", "definition": "стимул", "progress": 0 },
+  { "id": 261, "word": "influence", "definition": "впливати", "progress": 0 },
+  {
+    "id": 262,
+    "word": "interact",
+    "definition": "взаємодіяти",
+    "progress": 0
+  },
+  { "id": 263, "word": "involved", "definition": "залучений", "progress": 0 },
+  {
+    "id": 264,
+    "word": "magnitude",
+    "definition": "значущість",
+    "progress": 0
+  },
+  {
+    "id": 265,
+    "word": "modify",
+    "definition": "модифікувати",
+    "progress": 0
+  },
+  { "id": 266, "word": "notion", "definition": "поняття", "progress": 0 },
+  { "id": 267, "word": "obstacle", "definition": "перешкода", "progress": 0 },
+  { "id": 268, "word": "overlap", "definition": "перекриття", "progress": 0 },
+  {
+    "id": 269,
+    "word": "parallel",
+    "definition": "паралельний",
+    "progress": 0
+  },
+  {
+    "id": 270,
+    "word": "perspective",
+    "definition": "перспектива",
+    "progress": 0
+  },
+  {
+    "id": 271,
+    "word": "predict",
+    "definition": "прогнозувати",
+    "progress": 0
+  },
+  {
+    "id": 272,
+    "word": "prioritize",
+    "definition": "надавати пріоритет",
+    "progress": 0
+  },
+  {
+    "id": 273,
+    "word": "proficient",
+    "definition": "кваліфікований",
+    "progress": 0
+  },
+  {
+    "id": 274,
+    "word": "relevant",
+    "definition": "відповідний",
+    "progress": 0
+  },
+  {
+    "id": 275,
+    "word": "restructure",
+    "definition": "перебудовувати",
+    "progress": 0
+  },
+  { "id": 276, "word": "retain", "definition": "зберігати", "progress": 0 },
+  { "id": 277, "word": "revise", "definition": "переглядати", "progress": 0 },
+  {
+    "id": 278,
+    "word": "sequence",
+    "definition": "послідовність",
+    "progress": 0
+  },
+  {
+    "id": 279,
+    "word": "significant",
+    "definition": "значний",
+    "progress": 0
+  },
+  { "id": 280, "word": "simulate", "definition": "імітувати", "progress": 0 },
+  {
+    "id": 281,
+    "word": "speculate",
+    "definition": "спекулювати",
+    "progress": 0
+  },
+  { "id": 282, "word": "strategy", "definition": "стратегія", "progress": 0 },
+  {
+    "id": 283,
+    "word": "subsequent",
+    "definition": "наступний",
+    "progress": 0
+  },
+  {
+    "id": 284,
+    "word": "sufficient",
+    "definition": "достатній",
+    "progress": 0
+  },
+  { "id": 285, "word": "theory", "definition": "теорія", "progress": 0 },
+  {
+    "id": 286,
+    "word": "transform",
+    "definition": "трансформувати",
+    "progress": 0
+  },
+  {
+    "id": 287,
+    "word": "underlying",
+    "definition": "основний",
+    "progress": 0
+  },
+  {
+    "id": 288,
+    "word": "utilize",
+    "definition": "використовувати",
+    "progress": 0
+  },
+  {
+    "id": 289,
+    "word": "validate",
+    "definition": "перевіряти",
+    "progress": 0
+  },
+  {
+    "id": 290,
+    "word": "vulnerable",
+    "definition": "вразливий",
+    "progress": 0
+  },
+  { "id": 291, "word": "abolish", "definition": "скасувати", "progress": 0 },
+  { "id": 292, "word": "abundant", "definition": "достатній", "progress": 0 },
+  { "id": 293, "word": "advocate", "definition": "захищати", "progress": 0 },
+  { "id": 294, "word": "allocate", "definition": "виділяти", "progress": 0 },
+  { "id": 295, "word": "amend", "definition": "виправляти", "progress": 0 },
+  {
+    "id": 296,
+    "word": "apprehensive",
+    "definition": "обережний",
+    "progress": 0
+  },
+  { "id": 297, "word": "arise", "definition": "виникати", "progress": 0 },
+  { "id": 298, "word": "assert", "definition": "заявляти", "progress": 0 },
+  { "id": 299, "word": "assess", "definition": "оцінювати", "progress": 0 },
+  {
+    "id": 300,
+    "word": "astonishing",
+    "definition": "вражаючий",
+    "progress": 0
+  },
+  { "id": 301, "word": "attain", "definition": "досягати", "progress": 0 },
+  {
+    "id": 302,
+    "word": "benevolent",
+    "definition": "доброчинний",
+    "progress": 0
+  },
+  { "id": 303, "word": "candid", "definition": "щирий", "progress": 0 },
+  {
+    "id": 304,
+    "word": "capacity",
+    "definition": "потужність",
+    "progress": 0
+  },
+  { "id": 305, "word": "clarify", "definition": "уточнити", "progress": 0 },
+  { "id": 306, "word": "collide", "definition": "зіткнутися", "progress": 0 },
+  { "id": 307, "word": "commence", "definition": "почати", "progress": 0 },
+  {
+    "id": 308,
+    "word": "compensatory",
+    "definition": "компенсаційний",
+    "progress": 0
+  },
+  {
+    "id": 309,
+    "word": "comprehensive",
+    "definition": "всебічний",
+    "progress": 0
+  },
+  { "id": 310, "word": "convey", "definition": "передавати", "progress": 0 },
+  {
+    "id": 311,
+    "word": "correspond",
+    "definition": "відповідати",
+    "progress": 0
+  },
+  {
+    "id": 312,
+    "word": "cumulative",
+    "definition": "кумулятивний",
+    "progress": 0
+  },
+  { "id": 313, "word": "debate", "definition": "дебати", "progress": 0 },
+  { "id": 314, "word": "defer", "definition": "відкладати", "progress": 0 },
+  {
+    "id": 315,
+    "word": "deplete",
+    "definition": "виснажувати",
+    "progress": 0
+  },
+  { "id": 316, "word": "derive", "definition": "виводити", "progress": 0 },
+  { "id": 317, "word": "diligent", "definition": "старанний", "progress": 0 },
+  { "id": 318, "word": "disrupt", "definition": "порушувати", "progress": 0 },
+  {
+    "id": 319,
+    "word": "diverse",
+    "definition": "різноманітний",
+    "progress": 0
+  },
+  { "id": 320, "word": "emerge", "definition": "з'являтися", "progress": 0 },
+  {
+    "id": 321,
+    "word": "empirical",
+    "definition": "емпіричний",
+    "progress": 0
+  },
+  {
+    "id": 322,
+    "word": "endorse",
+    "definition": "підтримувати",
+    "progress": 0
+  },
+  { "id": 323, "word": "entail", "definition": "передбачати", "progress": 0 },
+  {
+    "id": 324,
+    "word": "establish",
+    "definition": "встановлювати",
+    "progress": 0
+  },
+  {
+    "id": 325,
+    "word": "examine",
+    "definition": "досліджувати",
+    "progress": 0
+  },
+  {
+    "id": 326,
+    "word": "exemplify",
+    "definition": "ілюструвати",
+    "progress": 0
+  },
+  { "id": 327, "word": "explicit", "definition": "явний", "progress": 0 },
+  { "id": 328, "word": "extract", "definition": "витягувати", "progress": 0 },
+  { "id": 329, "word": "feasible", "definition": "реальний", "progress": 0 },
+  {
+    "id": 330,
+    "word": "flourish",
+    "definition": "процвітати",
+    "progress": 0
+  },
+  {
+    "id": 331,
+    "word": "functionality",
+    "definition": "функціональність",
+    "progress": 0
+  },
+  { "id": 332, "word": "grasp", "definition": "зрозуміти", "progress": 0 },
+  {
+    "id": 333,
+    "word": "highlight",
+    "definition": "підкреслити",
+    "progress": 0
+  },
+  {
+    "id": 334,
+    "word": "illustrate",
+    "definition": "ілюструвати",
+    "progress": 0
+  },
+  { "id": 335, "word": "imminent", "definition": "неминучий", "progress": 0 },
+  { "id": 336, "word": "implicate", "definition": "залучати", "progress": 0 },
+  { "id": 337, "word": "inherent", "definition": "вроджений", "progress": 0 },
+  { "id": 338, "word": "innovate", "definition": "інновації", "progress": 0 },
+  {
+    "id": 339,
+    "word": "integrate",
+    "definition": "інтегрувати",
+    "progress": 0
+  },
+  {
+    "id": 340,
+    "word": "justify",
+    "definition": "виправдовувати",
+    "progress": 0
+  },
+  {
+    "id": 341,
+    "word": "legitimate",
+    "definition": "легітимний",
+    "progress": 0
+  },
+  {
+    "id": 342,
+    "word": "maintain",
+    "definition": "підтримувати",
+    "progress": 0
+  },
+  {
+    "id": 343,
+    "word": "manipulate",
+    "definition": "маніпулювати",
+    "progress": 0
+  },
+  {
+    "id": 344,
+    "word": "maximize",
+    "definition": "максимізувати",
+    "progress": 0
+  },
+  {
+    "id": 345,
+    "word": "mitigate",
+    "definition": "пом'якшувати",
+    "progress": 0
+  },
+  {
+    "id": 346,
+    "word": "modify",
+    "definition": "модифікувати",
+    "progress": 0
+  },
+  {
+    "id": 347,
+    "word": "monitor",
+    "definition": "контролювати",
+    "progress": 0
+  },
+  {
+    "id": 348,
+    "word": "nevertheless",
+    "definition": "тим не менш",
+    "progress": 0
+  },
+  { "id": 349, "word": "obtain", "definition": "отримувати", "progress": 0 },
+  { "id": 350, "word": "outcome", "definition": "результат", "progress": 0 },
+  { "id": 351, "word": "overcome", "definition": "подолати", "progress": 0 },
+  { "id": 352, "word": "perceive", "definition": "сприймати", "progress": 0 },
+  {
+    "id": 353,
+    "word": "preliminary",
+    "definition": "попередній",
+    "progress": 0
+  },
+  {
+    "id": 354,
+    "word": "proceed",
+    "definition": "продовжувати",
+    "progress": 0
+  },
+  {
+    "id": 355,
+    "word": "propose",
+    "definition": "пропонувати",
+    "progress": 0
+  },
+  {
+    "id": 356,
+    "word": "questionnaire",
+    "definition": "анкетування",
+    "progress": 0
+  },
+  {
+    "id": 357,
+    "word": "rational",
+    "definition": "раціональний",
+    "progress": 0
+  },
+  { "id": 358, "word": "recruit", "definition": "вербувати", "progress": 0 },
+  { "id": 359, "word": "reliable", "definition": "надійний", "progress": 0 },
+  { "id": 360, "word": "resemble", "definition": "схожий", "progress": 0 },
+  { "id": 361, "word": "resolve", "definition": "вирішувати", "progress": 0 },
+  { "id": 362, "word": "reveal", "definition": "розкривати", "progress": 0 },
+  { "id": 363, "word": "revenue", "definition": "доходи", "progress": 0 },
+  {
+    "id": 364,
+    "word": "speculate",
+    "definition": "спекулювати",
+    "progress": 0
+  },
+  {
+    "id": 365,
+    "word": "subsequent",
+    "definition": "наступний",
+    "progress": 0
+  },
+  {
+    "id": 366,
+    "word": "tendency",
+    "definition": "схильність",
+    "progress": 0
+  },
+  {
+    "id": 367,
+    "word": "ultimate",
+    "definition": "остаточний",
+    "progress": 0
+  },
+  {
+    "id": 368,
+    "word": "validate",
+    "definition": "перевіряти",
+    "progress": 0
+  },
+  { "id": 369, "word": "widespread", "definition": "широкий", "progress": 0 },
+  { "id": 370, "word": "yearn", "definition": "тужити", "progress": 0 },
+  { "id": 371, "word": "abate", "definition": "зменшувати", "progress": 0 },
+  {
+    "id": 372,
+    "word": "advantageous",
+    "definition": "вигідний",
+    "progress": 0
+  },
+  {
+    "id": 373,
+    "word": "alleviate",
+    "definition": "полегшувати",
+    "progress": 0
+  },
+  {
+    "id": 374,
+    "word": "ambiguous",
+    "definition": "двозначний",
+    "progress": 0
+  },
+  {
+    "id": 375,
+    "word": "anticipate",
+    "definition": "очікувати",
+    "progress": 0
+  },
+  {
+    "id": 376,
+    "word": "articulate",
+    "definition": "чітко висловлювати",
+    "progress": 0
+  },
+  {
+    "id": 377,
+    "word": "augment",
+    "definition": "збільшувати",
+    "progress": 0
+  },
+  {
+    "id": 378,
+    "word": "collaboration",
+    "definition": "співпраця",
+    "progress": 0
+  },
+  {
+    "id": 379,
+    "word": "compromise",
+    "definition": "компроміс",
+    "progress": 0
+  },
+  {
+    "id": 380,
+    "word": "conducive",
+    "definition": "сприятливий",
+    "progress": 0
+  },
+  {
+    "id": 381,
+    "word": "consensus",
+    "definition": "консенсус",
+    "progress": 0
+  },
+  {
+    "id": 382,
+    "word": "contemplate",
+    "definition": "обмірковувати",
+    "progress": 0
+  },
+  { "id": 383, "word": "convenient", "definition": "зручний", "progress": 0 },
+  {
+    "id": 384,
+    "word": "correlation",
+    "definition": "кореляція",
+    "progress": 0
+  },
+  { "id": 385, "word": "critical", "definition": "критичний", "progress": 0 },
+  { "id": 386, "word": "cynical", "definition": "цинічний", "progress": 0 },
+  {
+    "id": 387,
+    "word": "deduct",
+    "definition": "вираховувати",
+    "progress": 0
+  },
+  { "id": 388, "word": "dilemma", "definition": "дилема", "progress": 0 },
+  {
+    "id": 389,
+    "word": "discrepancy",
+    "definition": "розбіжність",
+    "progress": 0
+  },
+  {
+    "id": 390,
+    "word": "disseminate",
+    "definition": "поширювати",
+    "progress": 0
+  },
+  {
+    "id": 391,
+    "word": "distinguish",
+    "definition": "відрізняти",
+    "progress": 0
+  },
+  {
+    "id": 392,
+    "word": "diversify",
+    "definition": "різноманітити",
+    "progress": 0
+  },
+  {
+    "id": 393,
+    "word": "efficiency",
+    "definition": "ефективність",
+    "progress": 0
+  },
+  { "id": 394, "word": "eliminate", "definition": "усувати", "progress": 0 },
+  {
+    "id": 395,
+    "word": "emphasize",
+    "definition": "підкреслити",
+    "progress": 0
+  },
+  { "id": 396, "word": "encompass", "definition": "включати", "progress": 0 },
+  {
+    "id": 397,
+    "word": "enhance",
+    "definition": "покращувати",
+    "progress": 0
+  },
+  { "id": 398, "word": "evaluate", "definition": "оцінювати", "progress": 0 },
+  {
+    "id": 399,
+    "word": "exaggerate",
+    "definition": "перебільшувати",
+    "progress": 0
+  },
+  {
+    "id": 400,
+    "word": "facilitate",
+    "definition": "полегшувати",
+    "progress": 0
+  },
+  {
+    "id": 401,
+    "word": "formulate",
+    "definition": "формулювати",
+    "progress": 0
+  },
+  { "id": 402, "word": "generous", "definition": "щедрий", "progress": 0 },
+  {
+    "id": 403,
+    "word": "hypothesis",
+    "definition": "гіпотеза",
+    "progress": 0
+  },
+  { "id": 404, "word": "impede", "definition": "заважати", "progress": 0 },
+  {
+    "id": 405,
+    "word": "implement",
+    "definition": "реалізувати",
+    "progress": 0
+  },
+  { "id": 406, "word": "indicate", "definition": "вказувати", "progress": 0 },
+  {
+    "id": 407,
+    "word": "inevitable",
+    "definition": "неминучий",
+    "progress": 0
+  },
+  {
+    "id": 408,
+    "word": "integrity",
+    "definition": "цілісність",
+    "progress": 0
+  },
+  {
+    "id": 409,
+    "word": "intervene",
+    "definition": "втручатися",
+    "progress": 0
+  },
+  {
+    "id": 410,
+    "word": "justifiable",
+    "definition": "виправданий",
+    "progress": 0
+  },
+  {
+    "id": 411,
+    "word": "lucrative",
+    "definition": "прибутковий",
+    "progress": 0
+  },
+  {
+    "id": 412,
+    "word": "manipulation",
+    "definition": "маніпуляція",
+    "progress": 0
+  },
+  {
+    "id": 413,
+    "word": "mitigation",
+    "definition": "пом'якшення",
+    "progress": 0
+  },
+  {
+    "id": 414,
+    "word": "negotiation",
+    "definition": "переговори",
+    "progress": 0
+  },
+  { "id": 415, "word": "obscure", "definition": "неясний", "progress": 0 },
+  { "id": 416, "word": "paradox", "definition": "парадокс", "progress": 0 },
+  {
+    "id": 417,
+    "word": "participate",
+    "definition": "брати участь",
+    "progress": 0
+  },
+  {
+    "id": 418,
+    "word": "pervasive",
+    "definition": "всепроникний",
+    "progress": 0
+  },
+  {
+    "id": 419,
+    "word": "precaution",
+    "definition": "заходи безпеки",
+    "progress": 0
+  },
+  {
+    "id": 420,
+    "word": "proficient",
+    "definition": "кваліфікований",
+    "progress": 0
+  },
+  { "id": 421, "word": "profound", "definition": "глибокий", "progress": 0 },
+  {
+    "id": 422,
+    "word": "proliferate",
+    "definition": "розповсюджуватися",
+    "progress": 0
+  },
+  { "id": 423, "word": "prosper", "definition": "процвітати", "progress": 0 },
+  {
+    "id": 424,
+    "word": "quarantine",
+    "definition": "карантин",
+    "progress": 0
+  },
+  {
+    "id": 425,
+    "word": "reassess",
+    "definition": "переглянути",
+    "progress": 0
+  },
+  {
+    "id": 426,
+    "word": "reiterate",
+    "definition": "повторювати",
+    "progress": 0
+  },
+  {
+    "id": 427,
+    "word": "remarkable",
+    "definition": "видатний",
+    "progress": 0
+  },
+  {
+    "id": 428,
+    "word": "revolutionize",
+    "definition": "революціонізувати",
+    "progress": 0
+  },
+  {
+    "id": 429,
+    "word": "satisfactory",
+    "definition": "задовільний",
+    "progress": 0
+  },
+  {
+    "id": 430,
+    "word": "sophisticated",
+    "definition": "складний",
+    "progress": 0
+  },
+  {
+    "id": 431,
+    "word": "substantiate",
+    "definition": "підтверджувати",
+    "progress": 0
+  },
+  {
+    "id": 432,
+    "word": "sustainability",
+    "definition": "сталий розвиток",
+    "progress": 0
+  },
+  { "id": 433, "word": "tenacious", "definition": "упертий", "progress": 0 },
+  { "id": 434, "word": "tolerate", "definition": "терпіти", "progress": 0 },
+  {
+    "id": 435,
+    "word": "transcend",
+    "definition": "перевершувати",
+    "progress": 0
+  },
+  {
+    "id": 436,
+    "word": "unprecedented",
+    "definition": "безпрецедентний",
+    "progress": 0
+  },
+  {
+    "id": 437,
+    "word": "vulnerable",
+    "definition": "вразливий",
+    "progress": 0
+  },
+  {
+    "id": 438,
+    "word": "willingness",
+    "definition": "готовність",
+    "progress": 0
+  },
+  { "id": 439, "word": "zealous", "definition": "ревний", "progress": 0 },
+  { "id": 440, "word": "abandon", "definition": "покидати", "progress": 0 },
+  {
+    "id": 441,
+    "word": "advocate",
+    "definition": "відстоювати",
+    "progress": 0
+  },
+  {
+    "id": 442,
+    "word": "analyze",
+    "definition": "аналізувати",
+    "progress": 0
+  },
+  { "id": 443, "word": "approach", "definition": "підхід", "progress": 0 },
+  {
+    "id": 444,
+    "word": "arbitrary",
+    "definition": "випадковий",
+    "progress": 0
+  },
+  {
+    "id": 445,
+    "word": "assert",
+    "definition": "стверджувати",
+    "progress": 0
+  },
+  { "id": 446, "word": "assess", "definition": "оцінювати", "progress": 0 },
+  { "id": 447, "word": "attain", "definition": "досягати", "progress": 0 },
+  {
+    "id": 448,
+    "word": "beneficial",
+    "definition": "корисний",
+    "progress": 0
+  },
+  { "id": 449, "word": "burden", "definition": "вага", "progress": 0 },
+  { "id": 450, "word": "clarify", "definition": "роз'яснити", "progress": 0 },
+  { "id": 451, "word": "coerce", "definition": "примушувати", "progress": 0 },
+  {
+    "id": 452,
+    "word": "coherent",
+    "definition": "послідовний",
+    "progress": 0
+  },
+  {
+    "id": 453,
+    "word": "contemplate",
+    "definition": "обмірковувати",
+    "progress": 0
+  },
+  { "id": 454, "word": "convene", "definition": "збирати", "progress": 0 },
+  {
+    "id": 455,
+    "word": "convince",
+    "definition": "переконувати",
+    "progress": 0
+  },
+  {
+    "id": 456,
+    "word": "correlate",
+    "definition": "корелювати",
+    "progress": 0
+  },
+  { "id": 457, "word": "deem", "definition": "вважати", "progress": 0 },
+  {
+    "id": 458,
+    "word": "diligent",
+    "definition": "працьовитий",
+    "progress": 0
+  },
+  { "id": 459, "word": "disrupt", "definition": "порушувати", "progress": 0 },
+  { "id": 460, "word": "elicit", "definition": "викликати", "progress": 0 },
+  {
+    "id": 461,
+    "word": "equivalent",
+    "definition": "еквівалентний",
+    "progress": 0
+  },
+  {
+    "id": 462,
+    "word": "exemplify",
+    "definition": "ілюструвати",
+    "progress": 0
+  },
+  { "id": 463, "word": "foster", "definition": "сприяти", "progress": 0 },
+  {
+    "id": 464,
+    "word": "generate",
+    "definition": "генерувати",
+    "progress": 0
+  },
+  { "id": 465, "word": "grasp", "definition": "розуміти", "progress": 0 },
+  {
+    "id": 466,
+    "word": "implication",
+    "definition": "наслідок",
+    "progress": 0
+  },
+  { "id": 467, "word": "incentive", "definition": "стимул", "progress": 0 },
+  {
+    "id": 468,
+    "word": "indispensable",
+    "definition": "незамінний",
+    "progress": 0
+  },
+  {
+    "id": 469,
+    "word": "inherent",
+    "definition": "притаманний",
+    "progress": 0
+  },
+  { "id": 470, "word": "insight", "definition": "інтуїція", "progress": 0 },
+  {
+    "id": 471,
+    "word": "interact",
+    "definition": "взаємодіяти",
+    "progress": 0
+  },
+  {
+    "id": 472,
+    "word": "invasive",
+    "definition": "інвазивний",
+    "progress": 0
+  },
+  {
+    "id": 473,
+    "word": "irrespective",
+    "definition": "незалежно від",
+    "progress": 0
+  },
+  {
+    "id": 474,
+    "word": "legitimate",
+    "definition": "законний",
+    "progress": 0
+  },
+  {
+    "id": 475,
+    "word": "marginal",
+    "definition": "маргінальний",
+    "progress": 0
+  },
+  {
+    "id": 476,
+    "word": "noteworthy",
+    "definition": "помітний",
+    "progress": 0
+  },
+  { "id": 477, "word": "obtain", "definition": "отримувати", "progress": 0 },
+  { "id": 478, "word": "outcome", "definition": "результат", "progress": 0 },
+  { "id": 479, "word": "overcome", "definition": "подолати", "progress": 0 },
+  {
+    "id": 480,
+    "word": "perspective",
+    "definition": "перспектива",
+    "progress": 0
+  },
+  {
+    "id": 481,
+    "word": "precede",
+    "definition": "попереджати",
+    "progress": 0
+  },
+  { "id": 482, "word": "profound", "definition": "глибокий", "progress": 0 },
+  {
+    "id": 483,
+    "word": "propose",
+    "definition": "пропонувати",
+    "progress": 0
+  },
+  {
+    "id": 484,
+    "word": "rationale",
+    "definition": "раціональне обґрунтування",
+    "progress": 0
+  },
+  {
+    "id": 485,
+    "word": "reconcile",
+    "definition": "примиряти",
+    "progress": 0
+  },
+  {
+    "id": 486,
+    "word": "relevant",
+    "definition": "релевантний",
+    "progress": 0
+  },
+  { "id": 487, "word": "reliable", "definition": "надійний", "progress": 0 },
+  {
+    "id": 488,
+    "word": "reverberate",
+    "definition": "відлунювати",
+    "progress": 0
+  },
+  { "id": 489, "word": "simulate", "definition": "імітувати", "progress": 0 },
+  {
+    "id": 490,
+    "word": "sophisticated",
+    "definition": "складний",
+    "progress": 0
+  },
+  { "id": 491, "word": "subtle", "definition": "непомітний", "progress": 0 },
+  {
+    "id": 492,
+    "word": "sustain",
+    "definition": "підтримувати",
+    "progress": 0
+  },
+  {
+    "id": 493,
+    "word": "tailor",
+    "definition": "налаштовувати",
+    "progress": 0
+  },
+  { "id": 494, "word": "tangible", "definition": "відчутний", "progress": 0 },
+  {
+    "id": 495,
+    "word": "terminate",
+    "definition": "припиняти",
+    "progress": 0
+  },
+  {
+    "id": 496,
+    "word": "transparency",
+    "definition": "прозорість",
+    "progress": 0
+  },
+  {
+    "id": 497,
+    "word": "trivial",
+    "definition": "другорядний",
+    "progress": 0
+  },
+  { "id": 498, "word": "vague", "definition": "неясний", "progress": 0 },
+  {
+    "id": 499,
+    "word": "vital",
+    "definition": "життєво важливий",
+    "progress": 0
+  },
+  { "id": 500, "word": "weigh", "definition": "вагувати", "progress": 0 }
+]
