@@ -2,16 +2,22 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { Image, StyleSheet, Text, TouchableOpacity, Vibration, View } from 'react-native';
 import { playSound, readFile, shuffleArray } from '../../fn';
 import { styles } from '../../styles';
+import { useTranslation } from 'react-i18next';
+import { getTip, onClickPillow, removeLastLetter } from './fn';
 
-
-const SplitWord = () => {
+const SplitWord = ({ route }) => {
   const [wordsArr, setWordsArr] = useState([])
   const [currentWord, setCurrentWord] = useState(null)
   const [letterArray, setLetterArray] = useState([])
   const [sound, setSound] = useState();
+  const [indexedLetterList, setIndexedLetterList] = useState([])
+
+  const { difficulty } = route.params;
+  const { t } = useTranslation();
+  const tranformedResult = letterArray.map(e => e.letter).join('')
 
   useEffect(() => {
-    readFile(setWordsArr);
+    readFile(setWordsArr, difficulty);
   }, []);
 
   useEffect(() => {
@@ -29,24 +35,12 @@ const SplitWord = () => {
     }
   }, [wordsArr])
 
-  const onClickPillow = (letter, index) => {
-    setLetterArray([...letterArray, { letter, index }])
-  }
-
-  const removeLastLetter = () => {
-    setLetterArray([])
-  }
-
-  const tranformedResult = letterArray.map(e => e.letter).join('')
-
   useEffect(() => {
-
     if (currentWord) {
       if (currentWord.word.length === tranformedResult.length) {
-
         if (currentWord.word.toUpperCase() === tranformedResult.toUpperCase()) {
           playSound(sound, setSound)
-          readFile(setWordsArr);
+          readFile(setWordsArr, difficulty);
           setLetterArray([])
         } else {
           setLetterArray([])
@@ -55,37 +49,41 @@ const SplitWord = () => {
 
       }
     }
-
   }, [letterArray, currentWord])
 
   const wordLetters = useMemo(() => {
     return currentWord?.word ? shuffleArray(currentWord.word.split('')) : [];
   }, [currentWord]);
 
+  useEffect(() => {
+    const newArray = wordLetters.map((e, i) => ({ index: i, letter: e.toUpperCase() }));
+    setIndexedLetterList(newArray);
+  }, [wordLetters]);
+
+
   return (
     <View style={styles.container}>
+      <TouchableOpacity
+        onPress={() => getTip(indexedLetterList, currentWord, setLetterArray)}
+      >
+        <Text>
+          {t('wantTip')}
+        </Text>
+      </TouchableOpacity>
       <Text style={stylesSplit.primaryText}>{currentWord?.definition}</Text>
-
       <View style={stylesSplit.borderDekor}></View>
-
       <View style={stylesSplit.pillowDefinitionContainer}>
-
         <Text style={stylesSplit.primaryText}>
           {tranformedResult}
         </Text>
-
         <TouchableOpacity
-          onPress={removeLastLetter}
+          onPress={() => removeLastLetter(setLetterArray)}
           style={{ padding: 4 }}>
           {Boolean(letterArray.length) &&
             <Image style={{ width: 24, height: 24 }} source={require('../../../assets/remove-letter.png')} />}
         </TouchableOpacity>
-
       </View>
-
-
       <View>
-
         <View style={stylesSplit.pillowContainer}>
           {
             wordLetters.map((e, i) => (
@@ -94,10 +92,13 @@ const SplitWord = () => {
                 style={stylesSplit.greyPillow}
               >
                 <TouchableOpacity
-                  onPress={() => { onClickPillow(e.toUpperCase(), i) }}
+                  onPress={() => { onClickPillow(e.toUpperCase(), i, setLetterArray) }}
                   style={[
                     stylesSplit.greyPillowText,
-                    { backgroundColor: letterArray.some(l => l.index === i) ? 'transparent' : 'green' }
+                    {
+                      backgroundColor: letterArray.some(l => l.index === i) ? 'transparent' : 'green',
+                      pointerEvents: letterArray.some(l => l.index === i) ? 'none' : 'auto'
+                    }
                   ]}>
                   <Text>
                     {e.toUpperCase()}
@@ -105,14 +106,10 @@ const SplitWord = () => {
                 </TouchableOpacity>
               </View>
             ))
-
           }
-
-
-
         </View>
       </View>
-    </View >
+    </View>
   );
 };
 

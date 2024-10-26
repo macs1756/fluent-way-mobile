@@ -15,10 +15,13 @@ i18n
           levelDifficultyMyself: 'Вивчаю власні слова',
           levelDifficulty1: 'A1',
           levelDifficulty2: 'A2',
+          levelDifficulty3: 'B1',
+          levelDifficulty4: 'B2',
           createNewWord: 'Створити нове слово',
           quiz: 'Опитувальник',
           relativeBetweenWords: 'Сполучення слів',
-          splitWordOnLetters: 'Складання слів з букв'
+          splitWordOnLetters: 'Складання слів з букв',
+          wantTip: 'Хочу підказку'
         }
       },
       ua: {
@@ -30,10 +33,13 @@ i18n
           levelDifficultyMyself: 'Вивчаю власні слова',
           levelDifficulty1: 'A1',
           levelDifficulty2: 'A2',
+          levelDifficulty3: 'B1',
+          levelDifficulty4: 'B2',
           createNewWord: 'Створити нове слово',
           quiz: 'Опитувальник',
           relativeBetweenWords: 'Сполучення слів',
-          splitWordOnLetters: 'Складання слів з букв'
+          splitWordOnLetters: 'Складання слів з букв',
+          wantTip: 'Хочу підказку'
         }
       }
     },

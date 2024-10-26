@@ -28,6 +28,18 @@ function DifficultyLevels({ navigation }) {
         onPress={() => navigation.navigate('Flows', { difficulty: 'a2' })}
       />
 
+      <Button
+        style={styles.text}
+        title={t('levelDifficulty3')}
+        onPress={() => navigation.navigate('Flows', { difficulty: 'b1' })}
+      />
+
+      <Button
+        style={styles.text}
+        title={t('levelDifficulty4')}
+        onPress={() => navigation.navigate('Flows', { difficulty: 'b2' })}
+      />
+
 
 
     </View>
