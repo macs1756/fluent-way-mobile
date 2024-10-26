@@ -5,12 +5,14 @@ import { playSound, shuffleArray } from '../../fn';
 
 
 
-const RealtionWords = ({ navigation }) => {
+const RealtionWords = ({ navigation, route }) => {
   const [fileContent, setFileContent] = useState(null);
   const [selectedWorld, setSelectedWorld] = useState(null)
   const [selectedDefinitions, setSelectedDefinitions] = useState(null)
   const [finishedFlows, setFinishedFlows] = useState([])
   const [sound, setSound] = useState();
+
+  const { difficulty } = route.params;
 
   const getRandomElements = (array, count) => {
     if (count > array.length) {
@@ -22,7 +24,7 @@ const RealtionWords = ({ navigation }) => {
   };
 
   const readFile = async () => {
-    const fileUri = `${FileSystem.documentDirectory}index.json`;
+    const fileUri = `${FileSystem.documentDirectory + difficulty}.json`;
     try {
       const fileExists = await FileSystem.getInfoAsync(fileUri);
       if (fileExists.exists) {
