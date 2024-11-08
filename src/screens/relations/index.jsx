@@ -97,25 +97,35 @@ const RealtionWords = ({ navigation, route }) => {
     }
   }, [selectedWorld, selectedDefinitions])
 
+  useEffect(()=> {
+    
+  }, [selectedWorld])
+
   return (
     <View style={styles.container}>
       <View style={styles.half}>
 
 
-        {randomElementsWords?.words && randomElementsWords.words.map(word => (
-          <TouchableOpacity
-            key={word.id}
-            style={[styles.button,
-            {
-              backgroundColor: selectedWorld?.word === word.word ? 'green' : 'rgb(33, 150, 243)',
-              display: finishedFlows.includes(word.id) ? 'none' : 'flex'
-            }
-            ]}
-            onPress={() => { setSelectedWorld(word) }}
-          >
-            <Text style={styles.buttonText}>{word.word}</Text>
-          </TouchableOpacity>
-        ))}
+        {randomElementsWords?.words?.map((word) => {
+          const isSelected = selectedWorld?.word === word.word;
+          const isFinished = finishedFlows.includes(word.id);
+
+          return (
+            <TouchableOpacity
+              key={word.id}
+              style={[
+                styles.button,
+                {
+                  backgroundColor: isSelected ? 'green' : 'rgb(33, 150, 243)',
+                  display: isFinished ? 'none' : 'flex',
+                },
+              ]}
+              onPress={() => setSelectedWorld(word)}
+            >
+              <Text style={styles.buttonText}>{word.word}</Text>
+            </TouchableOpacity>
+          );
+        })}
 
       </View>
       <View style={styles.half}>

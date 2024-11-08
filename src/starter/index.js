@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { pathToA1, pathToA2, pathToB1, pathToB2 } from "../con";
 import * as FileSystem from 'expo-file-system';
 import a1Words from '../../assets/json/ua/a1.json'
 import a2Words from '../../assets/json/ua/a2.json'
@@ -7,6 +6,11 @@ import b1Words from '../../assets/json/ua/b1.json'
 import b2Words from '../../assets/json/ua/b2.json'
 
 const Starter = () => {
+
+  const pathToA1 = `${FileSystem.documentDirectory}a1.json`;
+  const pathToA2 = `${FileSystem.documentDirectory}a2.json`;
+  const pathToB1 = `${FileSystem.documentDirectory}b1.json`;
+  const pathToB2 = `${FileSystem.documentDirectory}b2.json`;
 
   const copyFileToDocumentDirectory = async () => {
     const isCopiedA1 = await FileSystem.getInfoAsync(pathToA1);

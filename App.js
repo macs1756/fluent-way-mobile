@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createStackNavigator, TransitionSpecs } from '@react-navigation/stack';
 
 //Routes
 import CreateWords from './src/screens/createWord';
@@ -24,7 +24,15 @@ export default function App() {
   return (
     <I18nextProvider i18n={i18n}>
       <NavigationContainer>
-        <Stack.Navigator>
+        <Stack.Navigator
+          screenOptions={{
+            cardStyleInterpolator: ({ current }) => ({
+              cardStyle: {
+                opacity: current.progress,
+              },
+            }),
+          }}
+        >
           <Stack.Screen name="Home" component={HomeScreen} />
           <Stack.Screen name="CreateWord" component={CreateWords} />
           <Stack.Screen name="Quiz" component={Quiz} initialParams={{ difficulty: null }} />
