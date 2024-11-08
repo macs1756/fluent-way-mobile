@@ -26,6 +26,11 @@ function HomeScreen({ navigation }) {
         title={t('rootMenuLink3')}
         onPress={() => navigation.navigate('Settings')}
       />
+      <Button
+        style={styles.text}
+        title={"Token"}
+        onPress={() => navigation.navigate('Token')}
+      />
 
       <Button
         style={styles.text}

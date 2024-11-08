@@ -16,6 +16,7 @@ import FlowsMenu from './src/screens/flowsMenu';
 import i18n from './i18n';
 import { I18nextProvider } from 'react-i18next';
 import Starter from './src/starter';
+import PushNotificationComponent from './src/screens/token';
 
 
 const Stack = createStackNavigator();
@@ -41,6 +42,7 @@ export default function App() {
           <Stack.Screen name="SplitWord" component={SplitWord} />
           <Stack.Screen name="Choose Level" component={ChooseLevel} />
           <Stack.Screen name="Flows" component={FlowsMenu} initialParams={{ difficulty: null }} />
+          <Stack.Screen name="Token" component={PushNotificationComponent} initialParams={{ difficulty: null }} />
         </Stack.Navigator>
         <Starter />
       </NavigationContainer>
